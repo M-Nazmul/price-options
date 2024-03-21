@@ -7,7 +7,7 @@ import PriceOptions from './components/PriceOptions/PriceOptions'
 function App() {
 
   return (
-    <div className='max-w-[1320px] mx-auto px-16 md:px-[85px]'>
+    <div className='border-l border-slate-700 max-w-[1440px] mx-auto px-16 '>
       <NavBar></NavBar>
       <Browser></Browser>
       <PriceOptions></PriceOptions>

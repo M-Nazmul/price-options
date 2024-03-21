@@ -21,7 +21,7 @@ const NavBar = () => {
               <MdOutlineRestaurantMenu /> : <RxHamburgerMenu />
             }
           </div>
-            <ul className= {`md:flex md:gap-4 my-4 ease-in duration-300 absolute md:static z-10  bg-gray-700 rounded-xl justify-center items-center px-8 md:px-0
+            <ul className= {`md:flex md:gap-4 my-4 ease-in duration-300 absolute md:static z-10  bg-gray-700 rounded-xl justify-center items-center px-8 md:px-0 max-w-3xl mx-auto 
             ${open ? "left-16 top-[50px]" : "-left-52"}`}>
               {
                 routes.map(route => <Link key={route.id} route = {route}></Link>)
