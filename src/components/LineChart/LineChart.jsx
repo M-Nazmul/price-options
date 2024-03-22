@@ -14,13 +14,15 @@ const LineChart = () => {
         { id: 110, name: "Olivia", math: 75, physics: 68, chemistry: 72 }
       ];
     return (
-        <div className='max-w-[700px] h-96 mx-auto'> 
+        <div className='max-w-[700px] h-96 mx-auto mb-16'> 
         <h2 className='my-4 font-semibold text-3xl'>Student Exam marks</h2>
             <ResponsiveContainer>
                 <LChart data={studentData}>
                     <XAxis dataKey={'name'}></XAxis>
                     <YAxis></YAxis>
-                    <Line type={'monotone'} dataKey="physics" />
+                    <Line type={'monotone'} dataKey="physics" stroke='violet' />
+                    <Line type={'monotone'} dataKey="chemistry" stroke='orangered' />
+                    <Line type={'monotone'} dataKey="math" stroke='dodgerblue' />
                     <Tooltip></Tooltip>
                 </LChart>
             </ResponsiveContainer>

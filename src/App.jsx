@@ -4,6 +4,7 @@ import './App.css'
 import Browser from './components/Browser/Browser'
 import PriceOptions from './components/PriceOptions/PriceOptions'
 import LineChart from './components/LineChart/LineChart'
+import Phones from './components/Phones/Phones'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Browser></Browser>
       <PriceOptions></PriceOptions>
       <LineChart></LineChart>
+      <Phones></Phones>
     </div>
   )
 }
